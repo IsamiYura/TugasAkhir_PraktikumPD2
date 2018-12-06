@@ -37,7 +37,7 @@ CREATE TABLE `survivor` (
 
 LOCK TABLES `survivor` WRITE;
 /*!40000 ALTER TABLE `survivor` DISABLE KEYS */;
-INSERT INTO `survivor` VALUES (1,'Ferguso'),(2,'Fernando'),(3,'Alonso'),(4,'Mamank');
+INSERT INTO `survivor` VALUES (1,'Ferguso'),(2,'Fernando'),(3,'Alonso'),(4,'Stefanus');
 /*!40000 ALTER TABLE `survivor` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -72,4 +72,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-12-04 13:37:03
+-- Dump completed on 2018-12-06 14:40:43
