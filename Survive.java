@@ -13,11 +13,12 @@ import java.util.*;
  */
 public class Survive {
 
-    int selector;
-
+    
     public static void main(String[] args) {
         Game_Engine mainkan = new Game_Engine();
         mainkan.menu();
+
+
     }
 
 }
