@@ -112,10 +112,6 @@ public class Game_Engine {
         }
     } // menu utama
 
-    void clearScore() {
-
-    }
-
     void printLinkedList() {
         if (loop) {
             for (int z = 1; z < 5; z++) {
@@ -208,7 +204,7 @@ public class Game_Engine {
         if (current == 1) { //ketika berperan sebagai Player
             if (kumpulanHP[1] > 0) {
                 System.out.println("Nyawa " + charaHash.get(1) + " = " + kumpulanHP[1]);
-            } else if (kumpulanHP[1] <= 0) {
+            } else if (kumpulanHP[1] <= 0 && kumpulanHP[2] > 0 && kumpulanHP[3] > 0 && kumpulanHP[4] > 0) {
                 System.out.println("Game Over!");
                 System.out.println("Your score = " + score);
                 updateSurvivorScore();
@@ -228,7 +224,7 @@ public class Game_Engine {
         if (current == 2) { //ketika berperan sebagai Player
             if (kumpulanHP[2] > 0) {
                 System.out.println("Nyawa " + charaHash.get(2) + " = " + kumpulanHP[2]);
-            } else if (kumpulanHP[2] <= 0) {
+            } else if (kumpulanHP[1] > 0 && kumpulanHP[2] <= 0 && kumpulanHP[3] > 0 && kumpulanHP[4] > 0) {
                 System.out.println("Game Over!");
                 System.out.println("Your score = " + score);
                 updateSurvivorScore();
@@ -678,4 +674,5 @@ public class Game_Engine {
             confirmPlayAgain();
         }
     }
+
 }
